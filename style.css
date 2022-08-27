@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: brown;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  padding: 0.6rem 1rem;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0.4rem;
+  background-color: bisque;
+}
+
+form {
+  display: flex;
+  margin: 0.3rem;
+}
+
+form input {
+  width: 50px;
+  margin: 0 0.4rem;
+  padding: 0.3rem;
+  text-align: center;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 12px;
+  background-color: bisque;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+form label {
+  padding: 0.6rem;
+  text-align: center;
+  font-size: 1.4rem;
+  color: white;
+}
+
+h1 {
+  color: aliceblue;
+  margin-bottom: 2rem;
+}
+
+#main {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#password-wrapper {
+  display: flex;
+  max-width: 600px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#password-one,
+#password-two {
+  padding: 0.6rem 1rem;
+  margin: 0.4rem;
+  background-color: bisque;
+  border-radius: 12px;
+  min-width: 200px;
+  max-width: 500px;
+  text-align: center;
+  font-weight: bold;
+  overflow-wrap: anywhere;
+}
+
+#gen-button {
+  position: relative;
+  text-align: center;
+}

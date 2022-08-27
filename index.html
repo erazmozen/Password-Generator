@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Password Generator</title>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="loader.css" />
+  </head>
+  <body>
+    <div id="fadein"></div>
+
+    <div id="show-field">
+      <div id="main">
+        <h1>Password Generator</h1>
+
+        <div>
+          <div id="gen-button">
+            <button id="gen-pass">Generate</button>
+            <button id="clear-pass">Clear</button>
+          </div>
+          <form id="multi-form">
+            <label for="multiplier">Multiplier:</label>
+            <input
+              type="number"
+              id="multiplier"
+              placeholder="#"
+              name="multiplier"
+            />
+          </form>
+        </div>
+
+        <div id="password-wrapper">
+          <div id="password-one" onclick="copyToClip(this.textContent)">
+            _______________
+          </div>
+
+          <div id="password-two" onclick="copyToClip(this.textContent)">
+            _______________
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      window.onload = function () {
+        setTimeout(function () {
+          document.getElementById("fadein").remove();
+        }, 1000);
+      };
+    </script>
+    <script src="index.js"></script>
+  </body>
+</html>
